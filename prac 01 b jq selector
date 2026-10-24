@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>The jQuery Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function() {
+/* This would select all the divisions */
+$("div").css("background-color","yellow");
+});
+</script>
+</head>
+<body>
+<div class = "big" id="div1">
+<p>This is first division of the DOM.</p>
+</div>
+<div class = "medium" id="div2">
+<p>This is second division of the DOM.</p>
+</div>
+<div class = "small" id="div3">
+<p>This is third division of the DOM.</p>
+</div>
+</body>
+</html>
+
+
+ID Selector
+<html>
+<head>
+<title>The jQuery Example</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js
+" > </script>
+<script>
+$(document).ready(function() {
+/* This would select 2nd division by id */
+$("#div2").css("background-color","yellow");
+});
+</script>
+</head>
+<body>
+<div class = "big" id="div1">
+<p>This is first division of the DOM.</p>
+</div>
+<div class = "medium" id="div2">
+<p>This is second division of the DOM.</p>
+</div>
+<div class = "small" id="div3">
+<p>This is third division of the DOM.</p>
+</div>
+</body>
+</html>
+
+
+Class Selector
+<html>
+<head>
+<title>The jQuery Example</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js
+" > </script>
+<script>
+$(document).ready(function() {
+/* This would select 3rd division by class name */
+$(".small").css("background-color","yellow");
+});
+</script>
+</head>
+<body>
+<div class = "big" id="div1">
+<p>This is first division of the DOM.</p>
+</div>
+<div class = "medium" id="div2">
+<p>This is second division of the DOM.</p>
+</div>
+<div class = "small" id="div3">
+<p>This is third division of the DOM.</p>
+</div>
+</body>
+</html>
