@@ -1,0 +1,6 @@
+hello.js
+console.log("Hello World!");
+Run:
+node hello.js
+Output:
+Hello World!
