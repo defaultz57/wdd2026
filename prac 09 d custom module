@@ -1,0 +1,7 @@
+math.js
+exports.add = function(a, b) {
+return a + b;
+};
+app.js
+const math = require("./math");
+console.log("Sum = " + math.add(10, 20));
