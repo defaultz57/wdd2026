@@ -1,0 +1,44 @@
+jQuery Get
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery text() Example</title>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+$("#para").text("This is new text added using jQuery");
+});
+});
+</script>
+</head>
+<body>
+<p id="para">Original Text</p>
+<button id="btn">Change Text</button>
+</body>
+</html>
+
+Set Contents
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery val() Example</title>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+$("#name").val("Ankita");
+});
+});
+</script>
+</head>
+<body>
+Enter Name: <input type="text" id="name">
+<button id="btn">Set Value</button>
+</body>
+</html>
+
