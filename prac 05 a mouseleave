@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>The jQuery Example</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function() {
+$(".div").mouseleave(function(){
+alert("Event type is " + event.type);
+alert("Target " + event.target.innerHTML);
+});
+});
+</script>
+<style>
+.div{margin:10px;padding:12px; border:2px solid
+#666; width:60px;} </style>
+</head>
+<body>
+<p>Click on any square below to see the result:</p> <div
+class = "div" style = "background-color:blue;">ONE</div> <div
+class = "div" style =
+"background-color:green;">TWO</div> <div class = "div" style
+= "background-color:red;">THREE</div> </body>
+</html>
