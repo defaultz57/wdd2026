@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<style>
+#menu{
+display:none;
+background:lightblue;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<button>Menu</button>
+<div id="menu">
+<p>Home</p>
+<p>About</p>
+<p>Contact</p>
+</div>
+<script>
+$(function(){
+$("button").click(function(){
+$("#menu").slideToggle();
+});
+});
+</script>
+</body>
+</html>
