@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Focus and Blur</title>
+</head>
+<body>
+<input type="text"
+onfocus="focusColor(this)"
+onblur="blurColor(this)">
+<script>
+function focusColor(element) {
+element.style.backgroundColor = "lightyellow";
+}
+function blurColor(element) {
+element.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>
