@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>The jQuery Example</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js
+" > </script>
+<script>
+$(document).ready(function() {
+$("#slideup").click(function(){
+$("h1").slideUp("slow", function(){
+alert("The slide-up effect is completed.");
+});
+});
+$("#slidedown").click(function(){
+$("h1").slideDown("slow", function(){
+alert("The slide-down effect is completed.");
+});
+});
+});
+</script>
+</head>
+<body align = "center">
+<div>
+<h1>This is a Demo of Sliding Effect.</h1>
+<input id = "slideup" type = "button" value = "Slide Up" />
+<input id = "slidedown" type = "button" value = "Slide Down"
+/> </div>
+</body>
+</html>
