@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>ng-repeat Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init="subjects=['HTML','CSS','JavaScript','AngularJS']">
+<h2>Subjects</h2>
+<ul>
+<li ng-repeat="subject in subjects">
+{{subject}}
+</li>
+</ul>
+</body>
+</html>
