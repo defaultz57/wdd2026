@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Student Details</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init="student={name:'Rahul',course:'BCA',city:'Mumbai'}">
+<h2>Student Details</h2>
+<p>Name: {{student.name}}</p>
+<p>Course: {{student.course}}</p>
+<p>City: {{student.city}}</p>
+</body>
+</html>
