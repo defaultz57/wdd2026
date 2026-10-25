@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Show Hide Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+<input type="checkbox" ng-model="show">
+Show Details
+<p ng-show="show">
+AngularJS is a JavaScript framework.
+</p>
+</body>
+</html>
