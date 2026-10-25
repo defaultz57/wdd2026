@@ -1,0 +1,43 @@
+ 1. Install Node.js package
+Create a folder, open the terminal inside it, and run:
+npm init -y
+npm install mysql2
+2. Create a MySQL database
+Open MySQL and run:
+CREATE DATABASE college;
+USE college;
+CREATE TABLE students (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(50),
+age INT
+);
+INSERT INTO students (name, age)
+VALUES ('Rahul', 20), ('Priya', 21);
+3. Create app.js
+const mysql = require("mysql2");
+// Create connection
+const connection = mysql.createConnection({
+host: "localhost",
+user: "root",
+password: "your_password",
+database: "college"
+});
+// Connect to MySQL
+connection.connect(function(error) {
+if (error) {
+console.log("Connection failed!");
+return;
+}
+console.log("MySQL connected successfully!");
+// Get data from students table
+connection.query("SELECT * FROM students", function(error, results) {
+if (error) {
+console.log("Query failed!");
+return;
+}
+console.log(results);
+});
+});
+4. Run the program
+In the terminal:
+node app.js
