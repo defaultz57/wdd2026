@@ -6,3 +6,6 @@ return;
 }
 console.log(data);
 });
+
+sample.txt
+Welcome to Node.js Practical.
